@@ -1,0 +1,24 @@
+:root {
+    --white-color :#fff;
+    --black-color :#000;
+    --text-color: #333;
+    --text-heading :rgb(57, 81, 68);
+    --red-color: rgb(233, 31, 31);
+    --background-color: rgb(240, 235, 206,0.2)
+}
+*{
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.item-heading{
+    color: var(--white-color);
+    margin: 50px 0;
+    text-align: center;
+    font-size: 5.2rem;
+    font-family: 'Saira Stencil One', cursive;
+}
