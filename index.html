@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/Grid.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
@@ -14,11 +15,11 @@
     <title>TRANG CHỦ - CosmicWonders</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
             <img src="./assets/img/logoyd.png" alt="">
         </div>
-        <nav>
+        <nav id="nav">
             <ul>
                 <a href="#"><li>TRANG CHỦ</li></a>
                 <a href="./assets/file/Hanhtinh.html"><li>HÀNH TINH</li></a>
@@ -26,6 +27,9 @@
                 <a href="./assets/file/thienha.html"><li>THIÊN HÀ</li></a>
             </ul>
         </nav>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
     </header>
     <div class="banner">
         <video autoplay muted loop class="myVideo">
@@ -188,5 +192,34 @@
             </div>
         </div>
     </div>
+        <script>
+            var header = document.getElementById('header');
+            var nav = document.getElementById('nav');
+            var mobileMenu = document.getElementById('mobile-menu');
+            var headerHeight = header.clientHeight;
+            // đóng/ mở mobile menu
+            mobileMenu.onclick = function() {
+                var isClose = header.clientHeight == headerHeight;
+                if (nav.style.display === "none"){
+                    nav.style.display = 'block';
+                }else {
+                    nav.style.display = 'none';
+                }
+            }
+            //tự động đóng khi chọn menu
+            var menuItems = document.querySelectorAll('#nav ul a[href*="#"]');
+            for(var i=0;i< menuItems.length; i++){
+                var menuItem = menuItems[i];
+               
+                menuItem.onclick = function (event){
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if(isParentMenu){
+                        event.preventDefault();
+                    }else {
+                        nav.style.display = 'none';
+                    }
+                }
+            }
+        </script>
 </body>
 </html>

@@ -22,3 +22,23 @@ html {
     font-size: 5.2rem;
     font-family: 'Saira Stencil One', cursive;
 }
+/* UL-UX  MENU  */
+.mobile-menu-btn{
+    display: none;
+    height: 50px;
+}
+.menu-icon{
+       /* display: block; */
+       color: #FFF;
+       font-size: 15px;
+       /* line-height: 50px; */
+       padding: 0 23px;
+       position: relative;
+       top: 18px;
+}
+.mobile-menu-btn:hover{
+    background-color: var(--white-color);
+}
+.mobile-menu-btn:hover .menu-icon{
+    color: var(--black-color);
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/Grid.css">
+    <link rel="stylesheet" href="../css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
@@ -14,11 +15,11 @@
     <title>SAO(CHÙM SAO) - CosmicWonders</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <header id="header">
+        <div class="logochinh">
             <img src="../img/logoyd.png" alt="">
         </div>
-        <nav>
+        <nav id="nav">
             <ul>
                 <a href="/index.html"><li>TRANG CHỦ</li></a>
                 <a href="./Hanhtinh.html"><li>HÀNH TINH</li></a>
@@ -26,6 +27,9 @@
                 <a href="./thienha.html"><li>THIÊN HÀ</li></a>
             </ul>
         </nav>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
     </header>
     <div class="banner">
         <video autoplay muted loop class="myVideo">
@@ -43,65 +47,120 @@
             <img src="../img/pngegg.png" alt="" class="parallax_img_1">
         </div>
     </div>
-    <center><div class="Chumsao">
-        <div class="item-heading">CÁC SAO(CHÙM SAO) PHỔ BIẾN</div> <br> 
-        <div class="bgrlistcs">
-            <div class="gird wide">
-                <div class="row"> 
-                    <div class="cacsao"><a class="cacsao_link" target="_blank"  href="../file/saoluntrang.html">
-                         <img class="img-sao" src="../img/saoluntrang.jpg" alt=""> <br>
-                         <center><span>Các Sao Lùn Trắng</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/saolunvang.html"><img class="img-sao" src="../img/saolunvang.jpg" alt=""> <br>
-                         <center><span>Các Sao Lùn Vàng</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/saolundo.html"><img class="img-sao" src="../img/saolundo.jpg" alt=""> <br>
-                         <center><span>Các Sao Lùn Đỏ</span></center></a>
-                     </div>
-         
-                    <div class="cacsao">
-                     <a class="cacsao_link" target="_blank" href="../file/saolunnau.html"><img class="img-sao" src="../img/saolunnau.jpg" alt=""> <br>
-                         <center><span>Các Sao Lùn Nâu</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/saolunden.html"> <img class="img-sao" src="../img/saolunden.jpg" alt=""> <br>
-                         <center><span>Các Sao Lùn Đen</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/saokhonglodo.html"> <img class="img-sao" src="../img/saokhonglodo.jpg" alt=""> <br>
-                         <center><span>Các Sao Khổng Lồ Đỏ</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/saokhongloxanhlam.html"> <img class="img-sao" src="../img/saokhongloxanhlam.png" alt=""> <br>
-                         <center><span>Các Sao Khổng Lồ Xanh Lam</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/sieusaokhonglodo.html"> <img class="img-sao" src="../img/sieusaokhonglodo.jpg" alt=""> <br>
-                        <center> <span>Các Siêu Sao Khổng Lồ Đỏ</span></center></a>
-                     </div>
-         
-                    <div class="cacsao">
-                     <a class="cacsao_link" target="_blank" href="../file/chuantinh.html">  <img class="img-sao" src="../img/chuantinh.jpg" alt=""> <br>
-                         <center><span>Các Chuẩn Tinh</span></center></a>
-                     </div>
-         
-                     <div class="cacsao">
-                         <a class="cacsao_link" target="_blank" href="../file/saoneutron.html"> <img class="img-sao" src="../img/saoneutron.png" alt=""> <br>
-                         <center><span>Các Sao Neutron</span></center></a>
-                     </div>
-                 </div>
-            </div>
-            
+    <div class="container">
+        <div class="noidung">
+            <a href="../file/saoluntrang.html">
+                <div class="sao">
+                    <img src="../img/saoluntrang.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SAO LÙN TRẮNG</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                    
+                </div>
+            </a>
+            <a href="../file/saolunvang.html">
+                <div class="sao">
+                    <img src="../img/saolunvang.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SAO LÙN VÀNG</h3> 
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/saolundo.html">
+                <div class="sao">
+                    <img src="../img/saolundo.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SAO LÙN ĐỎ</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/saolunnau.html">
+                <div class="sao">
+                    <img src="../img/saolunnau.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SAO LÙN NÂU</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/saolunden.html">
+                <div class="sao">
+                    <img src="../img/saolunden.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SAO LÙN ĐEN</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/saokhonglodo.html">
+                <div class="sao">
+                    <img src="../img/saokhonglodo.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SAO KHỔNG LỒ ĐỎ</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/saokhongloxanh.html">
+                <div class="sao">
+                    <img src="../img/saokhongloxanhlam.png" alt=""> <br>
+                    <div class="intro1"><h3>SAO KHỔNG LỒ XANH LAM</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/sieusaokhonglodo.html">
+                <div class="sao">
+                    <img src="../img/sieusaokhonglodo.jpg" alt=""> <br>
+                    <div class="intro1"><h3>SIÊU SAO KHỔNG LỒ ĐỎ</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/chuantinh.html">
+                <div class="sao">
+                    <img src="../img/chuantinh.jpg" alt=""> <br>
+                    <div class="intro1"><h3>CHUẨN TINH</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../file/saoneutron.html">
+                <div class="sao">
+                    <img src="../img/saoneutron.png" alt=""> <br>
+                    <div class="intro1"><h3>SAO NEUTRON</h3>
+                        <p>Nhấn vào đây để xem thêm thông tin</p>
+                    </div>
+                </div>
+            </a>
+
         </div>
-        
-    </div></center>
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var nav = document.getElementById('nav');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // đóng/ mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight == headerHeight;
+            if (nav.style.display === "none"){
+                nav.style.display = 'block';
+            }else {
+                nav.style.display = 'none';
+            }
+        }
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav ul a[href*="#"]');
+        for(var i=0;i< menuItems.length; i++){
+            var menuItem = menuItems[i];
+           
+            menuItem.onclick = function (event){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }else {
+                    nav.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 </html>

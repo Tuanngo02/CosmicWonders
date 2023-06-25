@@ -1,0 +1,196 @@
+
+
+/* mobile và tablet*/
+@media (max-width: 63.9375em){
+    body{
+        margin: 0;
+    }
+    .content__heading_animation{
+        animation: none;
+        border: none;
+        white-space: normal;
+        letter-spacing: normal;
+        width: 100%;
+    }
+
+    .parallax_img,.parallax_img_1,.img_vutru2{
+        display: none;
+    }
+    .parallax_text{
+        line-height: 100px;
+    }
+    .item_text{
+        margin-top: 15px !important;
+    }
+    .planet-box_introduce-name{
+        line-height: 52px;
+    }
+    .planet-box{
+        margin: 0;
+    }
+}
+/* Tablet */
+@media (min-width: 46.1875em) and (max-width: 63.9375em ){
+    /* .item .content{
+        width: 290px;
+    } */
+    .introduce_text > span{
+        font-size: 2.6rem;
+    }
+    .item_text{
+        margin-top: 15px !important;
+    }
+    .box{
+        margin: 0;
+        margin-top: 180px;
+    }
+    .planet-box_introduce{
+        z-index: 1;
+    }
+    .box_tablet{
+        margin-left: -90px;
+    }
+    .noidung{
+        /* position: absolute; */
+        display: grid;
+        grid-template-columns: auto auto auto;
+        /* top: 450%; */
+    }
+}
+/* mobile */
+@media (max-width: 46.1875em){
+    .introduce_img,.img_vutru1,.introduce_text,.planet-box_introduce,
+    .planet-box_img
+    {
+        width: 100%;
+    }
+    .item-heading{
+        line-height: 62px;
+        margin-top: 15px;
+    }
+    .heading_header{
+        padding: 0;
+    }
+    header .logochinh img{
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 50px;
+        width: 34%;
+    }
+    header{
+        justify-content: end;
+        position: relative;
+        background-color: #000;
+    }
+    header nav{
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        display: none;
+    }
+    header nav ul{
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-color: #000;
+    }
+    header nav ul a{
+        border: none;
+        display: block;
+        margin: 0;
+    }
+    header nav ul a:hover li {
+        background-color: #ccc;
+        color: #000;
+        display: block;
+        text-decoration: none !important;
+    }
+    header nav ul li{
+        color: var(--white-color) !important;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+    .header_heading{
+        position: relative;
+        margin-top: -15px;
+        background-color: #000;
+    }
+    #nav{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    .mobile-menu-btn{
+        display: block;
+    }
+    .trangtri1{
+        display: none;
+    }
+    .content-1-box,.introduce,.planet-box-cr,.logo,.intro{
+        flex-direction: column;
+    }
+    .content-2-item1,.img_vutru1{
+        position: inherit;
+    }
+    .content-2-item{
+        border: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .des{
+        line-height: 32px;
+    }
+    .introduce_text,.planet-box_introduce{
+        padding: 0 10px;
+        font-size: 2.6rem;
+    }
+    .content-1-box{
+        text-align: center;
+    }
+    .planet_video{
+        min-width: none;
+        width: 100%;
+    }
+    .planet-box_1{
+        flex-direction: column-reverse;
+    }
+    .box{
+        margin: 0;
+        width: inherit;
+    }
+    .planet-box{
+        margin-top: 25px;
+    }
+    .planet_video{
+        margin-top: -28px;
+    }
+    .header_1{
+        top: 0;
+    }
+    .xemthem{
+        display: block !important;
+    }
+    .noidung{
+        /* position: absolute; */
+        display: grid;
+        grid-template-columns: auto;
+        /* top: 450%; */
+    }
+    .banner1 .title{
+        padding: 20px;
+        line-height: 90px;
+    }
+    .logo{
+        align-items: center;
+    }
+    .intro img{
+        width: 100%;
+        margin: 0;
+    }
+    .intro p{
+        padding: 20px 8px 0;
+        font-size: 2.2rem;
+    }
+}

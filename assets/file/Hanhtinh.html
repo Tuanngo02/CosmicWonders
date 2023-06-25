@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/Grid.css">
+    <link rel="stylesheet" href="../css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
@@ -14,18 +15,21 @@
     <title>HÀNH TINH - CosmicWonders</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <header id="header">
+        <div class="logochinh">
             <img src="../img/logoyd.png" alt="">
         </div>
-        <nav>
+        <nav id="nav">
             <ul>
                 <a href="/index.html"><li>TRANG CHỦ</li></a>
-                <a href="#"><li>HÀNH TINH</li></a>
+                <a href=""><li>HÀNH TINH</li></a>
                 <a href="./sao.html"><li>SAO (CHÙM SAO)</li></a>
                 <a href="./thienha.html"><li>THIÊN HÀ</li></a>
             </ul>
         </nav>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
     </header>
     <div class="banner">
         <video autoplay muted loop class="myVideo">
@@ -51,7 +55,7 @@
     </div>
     <div class="planet_wrap">
         <div class="grid wide">
-            <div class="planet-box">
+            <div class="planet-box planet-box_1">
                 <div class="planet-box_introduce">
                     <h1 class="planet-box_introduce-name">MẶT TRỜI</h1>
                     <p class="planet-box_introduce-derc">Mặt trời là ngôi sao trung tâm của hệ mặt trời, nằm trong không gian gần trái đất. Nó là nguồn năng lượng chính của hệ mặt trời và có kích thước rất lớn. Mặt trời được hình thành từ quá trình hạt nhân tổ hợp trong lòng của nó, tạo ra ánh sáng và nhiệt độ cao. Ánh sáng mặt trời mất khoảng 8 phút để đi từ mặt trời đến trái đất. Mặt trời đóng vai trò quan trọng trong việc cung cấp năng lượng cho sự sống trên trái đất và gây ra hiện tượng thời tiết như nhiệt đới và khí hậu.</p>
@@ -64,9 +68,9 @@
                     </div>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box-cr">
                 <div class="planet-box_img">
-                    <div class="box">
+                    <div class="box box_tablet">
                         <img src="../video/saothuy1.gif" alt="" class="bg">
                         <div class="saothuy"></div>
                     </div>
@@ -77,7 +81,7 @@
                     <a class="planet-box_introduce-derc-next" href="">Xem thêm</a>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box_1">
                 <div class="planet-box_introduce">
                     <h1 class="planet-box_introduce-name">SAO KIM</h1>
                     <p class="planet-box_introduce-derc">Sao Kim là hành tinh thứ ba từ Mặt trời trong hệ Mặt trời. Nó là một trong những hành tinh sáng nhất khi nhìn từ Trái Đất. Sao Kim được xem là một "hành tinh đáy" do có bề mặt rất nóng, với nhiệt độ cao và áp suất mạnh.Sao Kim có kích thước tương đương với 95% kích thước của Trái Đất và có một bầu khí quyển mỏng. Sao Kim không có một hệ quảng cáo mặt trời rõ ràng và quỹ đạo quanh Mặt trời mất khoảng 225 ngày.</p>
@@ -90,9 +94,9 @@
                     </div>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box-cr">
                 <div class="planet-box_img">
-                    <div class="box">
+                    <div class="box box_tablet">
                         <img src="../img/traidat2.jpg" alt="" class="bg">
                         <div class="traidat"></div>
                     </div>
@@ -103,7 +107,7 @@
                     <a class="planet-box_introduce-derc-next" href="">Xem thêm</a>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box_1">
                 <div class="planet-box_introduce">
                     <h1 class="planet-box_introduce-name">SAO HỎA</h1>
                     <p class="planet-box_introduce-derc">Sao Hỏa là hành tinh thứ năm từ Mặt trời trong hệ Mặt trời. Nó được biết đến là "hành tinh đỏ" do màu sắc đỏ rực của bề mặt nó. Sao Hỏa có kích thước nhỏ hơn Trái Đất, nhưng vẫn có đặc điểm địa chất và khí hậu đa dạng. Bề mặt Sao Hỏa chứa nhiều địa hình khác nhau, bao gồm vùng núi, thung lũng, sa mạc và bề mặt phẳng. Sao Hỏa có một hệ quảng cáo mặt trời và quỹ đạo quanh Mặt trời mất khoảng 687 ngày. </p>
@@ -116,9 +120,9 @@
                     </div>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box-cr">
                 <div class="planet-box_img">
-                    <div class="box">
+                    <div class="box box_tablet">
                         <img src="../img/saomoc2.jpg" alt="" class="bg">
                         <div class="saomoc"></div>
                     </div>
@@ -129,7 +133,7 @@
                     <a class="planet-box_introduce-derc-next" href="">Xem thêm</a>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box_1">
                 <div class="planet-box_introduce">
                     <h1 class="planet-box_introduce-name">SAO THỔ</h1>
                     <p class="planet-box_introduce-derc">Sao Thổ là hành tinh thứ bảy tính theo khoảng cách trung bình từ Mặt Trời và là hành tinh lớn thứ hai về đường kính cũng như khối lượng, sau Sao Mộc trong Hệ Mặt Trời.  Sao Thổ là hành tinh khí khổng lồ với bán kính trung bình bằng 9 lần của Trái Đất.  Bề mặt Sao Thổ chứa các địa hình đa dạng bao gồm núi lửa, đồng cỏ, và vùng sa mạc. Sao Thổ có một hệ quảng cáo mặt trời và quỹ đạo quanh Mặt trời mất khoảng 365,25 ngày.</p>
@@ -142,9 +146,9 @@
                     </div>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box-cr">
                 <div class="planet-box_img">
-                    <div class="box">
+                    <div class="box box_tablet">
                         <img src="../video/saothienvuong1.gif" alt="" class="bg">
                         <div class="saothienvuong"></div>
                     </div>
@@ -155,7 +159,7 @@
                     <a class="planet-box_introduce-derc-next" href="">Xem thêm</a>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box_1">
                 <div class="planet-box_introduce">
                     <h1 class="planet-box_introduce-name">SAO HẢI VƯƠNG</h1>
                     <p class="planet-box_introduce-derc">Sao Hải Vương là hành tinh thứ chín và xa nhất tính từ Mặt Trời trong Hệ Mặt Trời. Nó là hành tinh lớn thứ tư về đường kính và lớn thứ ba về khối lượng. Sao Hải Vương có khối lượng riêng lớn nhất trong số các hành tinh khí trong hệ Mặt trời. Sao Hải Vương quay trên quỹ đạo quanh Mặt Trời ở khoảng cách trung bình 30,1 AU, bằng khoảng 30 lần khoảng cách Trái Đất - Mặt Trời.</p>
@@ -168,9 +172,9 @@
                     </div>
                 </div>
             </div>
-            <div class="planet-box">
+            <div class="planet-box planet-box-cr">
                 <div class="planet-box_img">
-                    <div class="box">
+                    <div class="box box_tablet">
                         <img src="../video/saodiemvuong1.gif" alt="" class="bg">
                         <div class="saodiemvuong"></div>
                     </div>
@@ -183,5 +187,34 @@
             </div>
         </div>
     </div>
+    <script>
+        var header = document.getElementById('header');
+        var nav = document.getElementById('nav');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // đóng/ mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight == headerHeight;
+            if (nav.style.display === "none"){
+                nav.style.display = 'block';
+            }else {
+                nav.style.display = 'none';
+            }
+        }
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav ul a[href*="#"]');
+        for(var i=0;i< menuItems.length; i++){
+            var menuItem = menuItems[i];
+           
+            menuItem.onclick = function (event){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }else {
+                    nav.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 </html>

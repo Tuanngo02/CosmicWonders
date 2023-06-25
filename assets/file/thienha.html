@@ -7,32 +7,56 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/Grid.css">
+    <link rel="stylesheet" href="../css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font/themify-icons/themify-icons.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Ysabeau+Infant:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>THIÊN HÀ - CosmicWonders</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <header class="header_1" id="header">
+        <div class="logochinh">
             <img src="../img/logoyd.png" alt="">
         </div>
-        <nav>
+        <nav id="nav">
             <ul>
                 <a href="/index.html"><li>TRANG CHỦ</li></a>
                 <a href="./Hanhtinh.html"><li>HÀNH TINH</li></a>
                 <a href="./sao.html"><li>SAO (CHÙM SAO)</li></a>
-                <a href="#"><li>THIÊN HÀ</li></a>
+                <a href=""><li>THIÊN HÀ</li></a>
             </ul>
         </nav>
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon ti-menu"></i>
+      </div>
     </header>
     <div class="banner">
         <video autoplay muted loop class="myVideo">
             <source src="../video/vutru.mp4" type="video/mp4">
         </video>
         <div class="content">
-            <h1 class="parallax_text">
+            <h1 class="parallax_text" style="font-weight: 800">
                 THIÊN HÀ
             </h1>
             <div class="des">
@@ -43,117 +67,670 @@
             <img src="../img/pngegg.png" alt="" class="parallax_img_1">
         </div>
     </div>
-    <div class="bo">
-        <div class="image-container">
-          <div class="circle">
-            <img src="../img/xoanoc.gif" alt="Your Image">
+    <div class="container-fluid p-0">
+      <h2  class="xemthem" style="color: #fff; text-align: center; display: none;">Lướt qua để xem thêm !</h2>
+      <div class="row pt-5 text-center m-0">
+          <div class="col-lg-12 border-bottom pb-4 mb-4">
+              <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide" data-row="1">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg/2560px-Andromeda_Galaxy_%28with_h-alpha%29.jpg" />
+                          <h4>Thiên hà <b>Tiên Nữ</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Blackeyegalaxy.jpg/375px-Blackeyegalaxy.jpg" />
+                          <h4>Thiên hà <b>Mắt Đen</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/M81.jpg/375px-M81.jpg" />
+                          <h4>Thiên hà <b>bode</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Cartwheel_Galaxy_JWST_NIRCam%2BMIRI_Full_Res.png/375px-Cartwheel_Galaxy_JWST_NIRCam%2BMIRI_Full_Res.png" />
+                          <h4>Thiên hà <b>Bánh Xe</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/M82_HST_ACS_2006-14-a-large_web.jpg/435px-M82_HST_ACS_2006-14-a-large_web.jpg" />
+                          <h4>Thiên hà <b>Sigar</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Eso1524aArtist%E2%80%99s_impression_of_CR7_the_brightest_galaxy_in_the_early_Universe.jpg/330px-Eso1524aArtist%E2%80%99s_impression_of_CR7_the_brightest_galaxy_in_the_early_Universe.jpg" />
+                          <h4>Thiên hà <b>dịch chuyển đỏ ( Cosmos Redshift 7 )</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hoag%27s_object.jpg/450px-Hoag%27s_object.jpg" />
+                          <h4>Thiên thể <b>Hoag</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Eso1021d.jpg/330px-Eso1021d.jpg" />
+                          <h4>Đám mây <b> Magellan Lớn</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg/330px-Small_Magellanic_Cloud_%28Digitized_Sky_Survey_2%29.jpg" />
+                          <h4>Đám mây <b> Magellan Nhỏ</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/ESO-VLT-Laser-phot-33a-07.jpg/450px-ESO-VLT-Laser-phot-33a-07.jpg" />
+                          <h4> <b>Ngân Hà</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/M101_hires_STScI-PRC2006-10a.jpg/450px-M101_hires_STScI-PRC2006-10a.jpg" />
+                          <h4>Thiên hà<b> Chong Chóng</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/M104_ngc4594_sombrero_galaxy_hi-res.jpg/330px-M104_ngc4594_sombrero_galaxy_hi-res.jpg" />
+                          <h4>Thiên hà<b> Mũ Vành Rộng</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Messier_63_GALEX_WikiSky.jpg/375px-Messier_63_GALEX_WikiSky.jpg" />
+                          <h4>Thiên hà<b> Hoa hướng dương</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UGC_10214HST.jpg/450px-UGC_10214HST.jpg" />
+                          <h4>Thiên Hà<b> Nòng Nọc</b></h4>
+                      </div>
+                      <div class="swiper-slide">
+                          <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Messier51_sRGB.jpg/450px-Messier51_sRGB.jpg" />
+                          <h4>Thiên Hà<b> Xoáy Nước</b></h4>
+                      </div>
+                  </div>
+
+              </div>
+
+              <!-- Swiper JS -->
+              <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+              <!-- Initialize Swiper -->
+              <script>
+                  var swiper = new Swiper(".mySwiper", {
+                      effect: "coverflow",
+                      grabCursor: true,
+                      centeredSlides: true,
+                      slidesPerView: "auto",
+                      coverflowEffect: {
+                          rotate: 50,
+                          stretch: 0,
+                          depth: 100,
+                          modifier: 1,
+                          slideShadows: true,
+                      },
+                      pagination: {
+                          el: ".swiper-pagination",
+                      },
+                  });
+              </script>
           </div>
-        </div>
-    
-        <div class="content-container">
-          <h2>Thiên hà Xoắn Ốc (Messier 101 hay NGC 5457)</h2>
-          <p>
-            Thiên hà xoắn ốc là một loại thiên hà có cấu trúc xoắn ốc đặc trưng. Nó được hình thành từ một vòng xoắn với các
-            cánh xoắn quanh một trục tâm, tạo ra hình dáng giống như một vỏ ốc.
-          </p>
-          <div class="anhphu">
-            <span class="anhphu_text">Thiên hà xoắn ốc có thanh UGC 12158.</span>
-            <img class="phu" src="../img/UGC 12158.jpg" alt="">
-            <img class="phu" src="../img/NGC 1300.jpg" alt="">
-            <span class="anhphu_text">NGC 1300 qua ảnh hồng ngoại.</span>
-          </div>
-          <br>
-          <p id="expanded-content" class="hidden moreDetail">
-            Cấu trúc của thiên hà xoắn ốc bao gồm một nhân tâm ở trung tâm, được bao quanh bởi các vòng xoắn và các cánh
-            xoắn
-            kéo dài ra. Nhân tâm chứa một số lượng lớn ngôi sao và có mật độ cao. Các vòng xoắn và cánh xoắn chứa các cụm
-            sao,
-            khí và bụi, tạo ra các vùng sáng và tối trên hình ảnh thiên hà.
-            <br><br>
-            Thiên hà xoắn ốc có tính đối xứng quanh trục tâm của nó. Vì vậy, khi nhìn từ phía trên hoặc dưới, thiên hà có
-            hình
-            dạng hình tròn hoặc hình elip, nhưng khi nhìn từ phía bên, ta nhìn thấy hình dạng xoắn ốc đặc trưng. Điều này là
-            do tốc độ quay của các cụm sao và khí trong thiên hà xoắn ốc, tạo ra một sự bẻ cong và kéo dãn trong cấu trúc
-            của
-            nó.
-            <br><br>
-            Thiên hà xoắn ốc có nhiều dạng và kích thước khác nhau. Một số có cánh xoắn rộng và đặc, trong khi những thiên
-            hà
-            khác có cánh xoắn mảnh và chất chứa ít khí và bụi hơn. Các thiên hà xoắn ốc cũng có đa dạng màu sắc, từ các vùng
-            sáng và xanh lá cây đến các vùng đỏ hơn.
-          </p>
-          <button class="expand-btn">Xem thêm</button>
-        </div>
       </div>
-      <div class="bo">
-        <div class="image-container">
-          <div class="circle">
-            <img src="../img/the.jpg" alt="Your Image">
+  </div>
+  <div class="container container_text1">
+      <div class="row justify-content-center row1 info initial-state" id="_1"
+          style="color: white; position: relative; ">
+          <div class="col-lg-3">
+              <h5><b>Kích thước và khoảng cách:</b></h5> Thiên hà Tiên Nữ có đường kính khoảng 220.000 năm ánh sáng và
+              nằm cách chúng
+              ta khoảng 2,537 triệu năm ánh sáng. Nó có đường kính gần gấp đôi so với Đường Ngang và chứa hơn một
+              nghìn tỷ ngôi sao.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pic_iroberts1.jpg/360px-Pic_iroberts1.jpg"
+                  title="Hình chụp Tinh vân Tiên Nữ của Isaac Roberts.">
+
           </div>
-        </div>
-        <div class="content-container">
-          <h2>Thiên hà elip khổng lồ ESO 325-G004</h2>
-          <p>
-            Thiên hà elip là một dạng thiên hà trong vũ trụ. Chúng có hình dạng dẹp hình elip và không có cấu trúc xoắn ốc
-            hoặc vòng tròn như các loại thiên hà khác như thiên hà xoắn ốc hay thiên hà không gian. Đây là loại thiên hà phổ
-            biến nhất trong vũ trụ và thường có kích thước lớn, chứa hàng tỷ hoặc hàng nghìn tỷ ngôi sao.
-          </p>
-          <p id="expanded-content" class="hidden moreDetail">
-            Thiên hà elip được hình thành từ các cụm sao giàu nguyên tố và ngôi sao tuổi đời trung bình. Chúng có mật độ sao
-            tương đối đồng đều trong toàn bộ thiên hà và không có cấu trúc rõ ràng như các cánh địa trong thiên hà xoắn ốc.
-            Thông thường, thiên hà elip không có vùng trung tâm sáng rõ nét như thiên hà ngôi sao hoạt động hay thiên hà vô
-            tuyến (quasar).
-            <br><br>
-            Thiên hà elip có các loại từ E0 đến E7, tương ứng với hình dạng từ hình cầu đến hình dẹp nhất. Số chỉ mức độ dẹp
-            của thiên hà elip và không liên quan đến kích thước hoặc khối lượng của chúng. Họng số màu (color index) của các
-            thiên hà elip thường là cao, chỉ ra rằng chúng chứa ít khí và bụi so với các loại thiên hà khác.
-            <br><br>
-            Nguyên nhân gây ra hình dạng dẹp của thiên hà elip chưa được hiểu rõ. Một số giả thuyết cho rằng tác động của
-            trọng lực từ các thiên hà lân cận có thể kéo dài và làm thay đổi hình dạng của thiên hà elip theo thời gian. Một
-            số thiên hà elip cũng có một số dấu hiệu về sự giao thoa hoặc sự đàn hồi với các thiên hà khác, cho thấy sự
-            tương tác giữa chúng.
-          </p>
-          <button class="expand-btn">Xem thêm</button>
-        </div>
-      </div>
-      <div class="bo">
-        <div class="image-container">
-          <div class="circle circle1">
-            <img src="../img/M87_jet.jpg" alt="Your Image">
+          <div class="col-lg-3">
+              <h5><b>Vị trí và quan sát:</b></h5> Thiên hà Tiên Nữ nằm trong chòm sao Tiên Nữ (Andromeda) và có thể
+              nhìn thấy bằng mắt thường từ Trái Đất. Đây là một trong những đối tượng thiên văn được quan sát nhiều
+              nhất và đã được nghiên cứu sâu sắc bởi các nhà thiên văn học.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Andromeda_galaxy.jpg/480px-Andromeda_galaxy.jpg"
+                  title="Thiên hà Andromeda, ảnh chụp tử ngoại của GALEX">
           </div>
-        </div>
-        <div class="content-container">
-          <h2>Đuôi sáng phát ra với chiều dài 5000 năm ánh sáng từ nhân thiên hà hoạt động M87, ảnh Hubble Space Telescope.</h2>
-          <p>
-            Nhân thiên hà hoạt động (AGN) là vùng nhân đặc của một thiên hà, do quá trình bồi đắp của hố đen siêu nặng tại nhân gây nên. Nhân AGN đặc này bị bao bọc bởi chất khí và bụi, chuyển động xoáy quanh khi rơi vào lỗ đen, gây nên lực ma sát. Nó tạo ra bức xạ vô cùng lớn làm AGN trở thành nguồn phát bức xạ mạnh nhất trong vũ trụ với độ sáng tương đương với bức xạ của hàng tỉ ngôi sao phát ra từ một vùng chỉ bằng hệ Mặt Trời.
-          </p>
-          <p id="expanded-content" class="hidden moreDetail">
-            Thiên hà có chứa nhân AGN được gọi là thiên hà hoạt động. Phần lớn năng lượng của nó không được phát ra từ các ngôi sao, chất bụi và chất khí trong vùng trống giữa các sao như các thiên hà thường. Bức xạ AGN có mặt trong một phần hay tất cả các vùng của bức xạ điện từ như radio, hồng ngoại, ánh sáng nhìn thấy, cực tím, X quang hay tia gamma.
-          </p>
-          <button class="expand-btn">Xem thêm</button>
-        </div>
-      </div>
-      <div class="bo">
-        <div class="image-container">
-          <div class="circle">
-            <img src="../img/UGC_9128.jpg" alt="Your Image">
+          <div class="col-lg-3">
+              <h5><b>Cấu trúc và thành phần:</b></h5> Thiên hà Tiên Nữ có cấu trúc giống như Thiên hà Đường Ngang, với
+              một lõi tập trung ngôi sao và các vòng xoắn quanh nó. Nó chứa nhiều cụm sao, đám mây sao, và các hành
+              tinh sao. Ngoài ra, cũng có những cấu trúc phức tạp như cánh đồng sao và kích thước khu vực sao băng.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Infraredandromeda.jpg/840px-Infraredandromeda.jpg "
+                  title="Thiên hà Andromeda chụp bằng tia hồng ngoại bởi Kính viễn vọng không gian Spitzer của NASA">
           </div>
-        </div>
-        <div class="content-container">
-          <h2>UGC 9128 là một thiên hà lùn vô định hình, có chứa khoảng 100 triệu ngôi sao.</h2>
-          <p>
-            Thiên hà lùn là một thiên hà nhỏ bao gồm vài tỷ ngôi sao, một số lượng nhỏ so với 200-400 tỉ sao của dải Ngân Hà. Đám mây Magellan Lớn, có trên 30 tỷ ngôi sao, đôi khi được phân loại như là một thiên hà lùn trong khi những người khác xem nó là một thiên hà chính thức quay quanh dãi Ngân Hà.
-          </p>
-          <p id="expanded-content" class="hidden moreDetail">
-            Các giả thiết hiện nay cho rằng hầu hết các thiên hà, bao gồm cả các thiên hà lùn, hình thành kết hợp với vật chất tối hoặc trong bụi khí chứa kim loại. Tuy nhiên, NASA Galaxy Evolution Explorer xác định các thiên hà lùn mới hình thành trong khí thiếu kim loại. Các thiên hà này nằm trong vành đai Leo, một đám mây hydro và heli quanh hai thiên hà lớn trong chòm sao Leo.
-            <br><br>
-            Có nhiều thiên hà lùn trong Nhóm Địa phương: các thiên hà nhỏ này thường quay quanh thiên hà lớn hơn, như Ngân hà, thiên hà Andromeda và thiên hà Tam Giác. Một bài báo năm 2007 đã cho rằng nhiều thiên hà lùn đã được tạo ra bởi các lực triều trong quá trình tiến hóa ban đầu của dải Ngân hà và thiên hà Andromeda. Thiên hà lực triều lùn được tạo ra khi các thiên hà va chạm và khối lượng hấp dẫn của chúng tương tác. Dòng vật chất thiên hà bị kéo ra khỏi thiên hà mẹ và các quầng vật chất tối bao quanh chúng.
-          </p>
-          <button class="expand-btn">Xem thêm</button>
-        </div>
+          <div class="col-lg-3">
+              <h5><b>Va chạm với Đường Ngang:</b></h5> Theo dự đoán, trong khoảng 4 tỷ năm nữa, Thiên hà
+              Tiên Nữ sẽ va chạm với Đường Ngang, tạo thành một thiên hà mới lớn hơn. Sự va chạm này có thể tạo ra
+              những hiện tượng như sự hấp thụ các hệ sao và sự tăng đột biến hoạt động sao. Dự kiến, Thiên hà kết hợp
+              mới này sẽ có tên là "Milkomeda".
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Double_Nucleus_of_the_Andromeda_Galaxy_%28M31%29.tif/lossy-page1-330px-Double_Nucleus_of_the_Andromeda_Galaxy_%28M31%29.tif.jpg"
+                  title="Hình chụp nhân thiên hà Andromeda của Kính viễn vọng Hubble (HST) cho thấy có thể có hai cấu trúc bên trong nhân. NASA/ESA.">
+          </div>
       </div>
-    
-    
+
+
+
+      <div class="row row2 info initial-state" id="_2" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Đặc điểm cấu trúc:</b></h5> Thiên hà mắt đen có một vùng tối ở trung tâm gọi là "vùng mắt" hoặc
+              "vùng đen". Vùng này thường là kết quả của một lỗ đen siêu khổng lồ ở trung tâm thiên hà, gọi là lỗ đen
+              siêu khổng lồ tĩnh lặng. Vùng mắt thường bao quanh bởi một vòng sao sáng với độ sáng giảm dần từ trung
+              tâm ra ngoài.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/M64map.png/330px-M64map.png"
+                  title="Vị trí thiên hà">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Hình thành và tiến hóa:</b></h5> Thiên hà mắt đen hình thành qua quá trình sáng tạo và tiến hóa
+              của thiên hà. Có thể hình thành thông qua các tác động như va chạm và tương tác với thiên hà khác hoặc
+              qua quá trình trao đổi vật chất và năng lượng với môi trường xung quanh.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Đa dạng và phân loại:</b></h5> Thiên hà mắt đen có sự đa dạng trong cấu trúc và kích thước. Có
+              một số thiên hà mắt đen nhỏ chỉ có đường kính vài nghìn năm ánh sáng, trong khi những loại lớn hơn có
+              thể có đường kính hàng trăm nghìn năm ánh sáng. Thiên hà mắt đen có thể thuộc vào các nhóm khác nhau,
+              bao gồm cả thiên hà xoắn ốc và thiên hà elip.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nghiên cứu và quan tâm:</b></h5> Thiên hà mắt đen là một lĩnh vực nghiên cứu quan trọng trong
+              thiên văn học hiện đại. Việc hiểu rõ về cấu trúc, hình thành và tiến hóa của chúng có thể giúp chúng ta
+              khám phá sự phát triển của các thiên hà và hiểu rõ hơn về vai trò của lỗ đen siêu khổng lồ trong quá
+              trình hình thành và tiến hóa của vũ trụ.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row3 info initial-state" id="_3" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Kích thước và khoảng cách:</b></h5> Thiên hà Bode có đường kính khoảng 90.000 năm ánh sáng và nằm
+              cách
+              chúng ta khoảng 12 triệu năm ánh sáng. Nó có kích thước tương tự với Thiên hà Bầu trời Nam và Thiên hà
+              Tiên Nữ, và nằm trong nhóm thiên hà Địa cầu cùng với chúng.
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc và thành phần:</b></h5>Thiên hà Bode là một thiên hà xoắn ốc có cấu trúc rõ ràng, với
+              các vòng xoắn và cánh đồng sao rõ rệt. Nó chứa hàng tỷ ngôi sao và các cụm sao trong các khu vực tập
+              trung, gồm cả các cụm sao trẻ và già. Ngoài ra, Thiên hà Bode cũng chứa nhiều đám mây khí và bụi, và các
+              vùng hình thành sao.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ssc2003-06c.jpg/459px-Ssc2003-06c.jpg"
+                  title="Ảnh chụp của Messier 81 từ tia hồng ngoại.
+                  ">
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Lỗ đen siêu khổng lồ:</b></h5> Trung tâm của Thiên hà Bode được cho là chứa một lỗ đen siêu khổng
+              lồ có khối lượng lớn, tương đương hàng triệu lần khối lượng Mặt Trời. Lỗ đen siêu khổng lồ này đóng vai
+              trò quan trọng trong quá trình hình thành và tiến hóa của thiên hà.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Messier_81_-_82_group_%2827198535640%29.jpg/330px-Messier_81_-_82_group_%2827198535640%29.jpg"
+                  title="Nhóm M81 được chụp lại bởi kính thiên văn Hubbles.">
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Thiên hà Bode là một đối tượng quan trọng trong nghiên cứu thiên
+              văn. Nhờ vào sự gần gũi và cấu trúc rõ rệt, nó đã được quan sát và nghiên cứu sâu sắc bằng các thiết bị
+              quan sát khác nhau, bao gồm cả kính viễn vọng và vệ tinh. Sự hiểu biết về Thiên hà Bode đã giúp chúng ta
+              tăng cường kiến thức về sự hình thành và tiến hóa của thiên hà.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row4 info initial-state" id="_4" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Kích thước và khoảng cách:</b></h5> Thiên hà Bánh Xe có đường kính khoảng 170.000 năm ánh sáng và
+              nằm cách chúng ta khoảng 21 triệu năm ánh sáng. Nó là một trong những thiên hà lớn và có kích thước
+              tương tự với Thiên hà Đường Ngang.
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc và thành phần:</b></h5> Thiên hà Bánh Xe có cấu trúc xoắn ốc rõ rệt, với các vòng xoắn
+              và cánh đồng sao đẹp mắt. Nó chứa hàng tỷ ngôi sao và các cụm sao trong các khu vực tập trung, gồm cả
+              các cụm sao trẻ và già. Ngoài ra, Thiên hà Bánh Xe cũng chứa các đám mây khí và bụi, và các vùng hình
+              thành sao.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Lỗ đen siêu khổng lồ:</b></h5> Trung tâm của Thiên hà Bánh Xe được cho là chứa một lỗ đen siêu
+              khổng lồ, như nhiều thiên hà khác. Lỗ đen siêu khổng lồ này đóng vai trò quan trọng trong quá trình hình
+              thành và tiến hóa của thiên hà.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Thiên hà Bánh Xe đã được quan sát và nghiên cứu kỹ lưỡng bằng
+              các thiết bị quan sát từ Trái Đất và không gian. Sự hiểu biết về Thiên hà Bánh Xe đã giúp chúng ta khám
+              phá và nghiên cứu sự phát triển của thiên hà, cơ chế hình thành ngôi sao, và tìm hiểu về cấu trúc và
+              động lực của vũ trụ.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row5 info initial-state" id="_5" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Kích thước và khoảng cách:</b></h5> Thiên hà Xì Gà có đường kính khoảng 70.000 năm ánh sáng và
+              nằm cách chúng ta khoảng 11,5 triệu năm ánh sáng. Điều này làm cho nó trở thành một trong những thiên hà
+              gần nhất với chúng ta có thể quan sát được.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/M82_Chandra_HST_Spitzer.jpg/278px-M82_Chandra_HST_Spitzer.jpg"
+                  title="Đây là một hình ảnh tổng hợp được thực hiện từ ba dự án quan sát vệ tinh. Các khía cạnh có thể nhìn thấy của thiên hà được chụp bởi HST. Spitzer đã chụp ảnh nó trong hồng ngoại, cho thấy phát xạ bụi và Chandra đã chụp ảnh nó trong tia X (hiển thị phần lớn phát xạ synchrotron từ nhanh electron). Phát xạ tia X được hiển thị trong các phần màu xanh.">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc và thành phần:</b></h5> Thiên hà Xì Gà là một thiên hà xoắn ốc với cấu trúc rõ rệt. Nó
+              chứa hàng tỷ ngôi sao và các cụm sao trong các khu vực tập trung, cũng như các vùng hình thành sao đang
+              diễn ra. Một đặc điểm nổi bật của Thiên hà Xì Gà là sự hiện diện của một "dòng chảy" chất liệu nóng bên
+              trong, được cho là do sự hấp dẫn của một lỗ đen siêu khổng lồ ở trung tâm thiên hà.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/M82%282%29.jpg/330px-M82%282%29.jpg"
+                  title="Hình ảnh quan sát tia X từ Chandra của thiên hà.">
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Hiện tượng hình thành sao:</b></h5> Thiên hà Xì Gà cung cấp một nền tảng quan trọng để nghiên cứu
+              quá trình hình thành sao. Nó có một tốc độ tạo sao rất cao, với sự hình thành ngôi sao diễn ra trong các
+              vùng dày đặc của nó. Các khu vực tạo sao này đóng vai trò quan trọng trong việc cung cấp nguyên liệu cho
+              sự hình thành sao và phát triển các hệ sao.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nghiên cứu và quan sát:</b></h5> Thiên hà Xì Gà đã được quan sát và nghiên cứu rất kỹ lưỡng bằng
+              cách sử dụng các thiết bị quan sát khác nhau, từ kính viễn vọng đến vệ tinh. Qua các nghiên cứu, chúng
+              ta đã có được hiểu biết sâu hơn về cấu trúc và tiến hóa của thiên hà, sự hình thành sao, cũng như vai
+              trò của lỗ đen siêu
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row6 info initial-state" id="_6" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Khoảng cách và đỏ dời:</b></h5>: Cosmos Redshift 7 nằm cách chúng ta khoảng 13,1 tỷ năm ánh sáng.
+              Điều này có nghĩa là chúng ta đang quan sát thiên hà này vào khoảng thời gian chỉ khoảng 700 triệu năm
+              sau khi vũ trụ hình thành. Vì khoảng cách xa và tốc độ xa từ chúng ta, ánh sáng từ CR7 đã trải qua hiện
+              tượng đỏ dời, tức là bước dịch chuyển đến phần dài của phổ, cho thấy rằng nó đang di chuyển xa chúng ta
+              trong không gian.
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc và thành phần:</b></h5> Cosmos Redshift 7 là một trong những thiên hà xa nhất mà chúng
+              ta có thể quan sát được. Nó được cho là một trong những thiên hà đầu tiên hình thành trong vũ trụ, chỉ
+              sau khoảng 700 triệu năm sau Sự kiện Lớn. CR7 được biết đến với tổ chức và cấu trúc phức tạp của nó, bao
+              gồm cụm sao sáng và khu vực tạo sao đang diễn ra. Điều này đã cung cấp cho các nhà khoa học thông tin
+              quan trọng về sự hình thành và phát triển ban đầu của các hệ thống sao.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Sự hình thành ngôi sao:</b></h5> Cosmos Redshift 7 đã cung cấp cho chúng ta thông tin về giai
+              đoạn đầu tiên của sự hình thành sao trong vũ trụ. Sự tạo sao đã diễn ra trong các khu vực tập trung của
+              CR7, và các nghiên cứu cho thấy rằng các cụm sao trong thiên hà này có khả năng hình thành từ các môi
+              trường giàu các nguyên tố nặng và dầu mỡ.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Cosmos Redshift 7 đã được quan sát và nghiên cứu kỹ lưỡng bằng
+              các thiết bị quan sát hiện đại như kính viễn vọng và vệ tinh. Nhờ các nghiên cứu này, chúng ta đã có
+              được sự hiểu biết sâu hơn về quá trình hình thành và tiến hóa của vũ trụ trong những giai đoạn đầu.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row7 info initial-state" id="_7" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc đặc biệt:</b></h5> Thiên thể Hoag được biết đến với cấu trúc độc đáo của nó. Nó bao gồm
+              một vòng sao sáng bao quanh một vòng sao tối hoàn toàn, tạo ra một hình dạng giống như một vòng hoặc một
+              vòng cước. Đây là sự kết hợp hiếm gặp giữa một vòng đồng tâm ngoại vi và một vòng nội vi, tạo ra một
+              hình dạng độc đáo và gây ngạc nhiên cho các nhà thiên văn học.
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Kích thước và vị trí:</b></h5> Thiên thể Hoag có kích thước tương đối lớn, với đường kính khoảng
+              100.000 năm ánh sáng. Nó nằm cách chúng ta khoảng 600 triệu năm ánh sáng trong chòm sao Thiên Hằng.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nguyên nhân hình thành:</b></h5> Cách mà Thiên thể Hoag hình thành vẫn chưa được hiểu rõ. Một giả
+              thuyết cho rằng nó có thể là kết quả của một va chạm giữa hai thiên thể hoặc một quá trình đặc biệt của
+              hình thành và tiến hóa của một thiên hà.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Do tính hiếm gặp và độc đáo của nó, Thiên thể Hoag đã thu hút sự
+              quan tâm của các nhà thiên văn học. Các nghiên cứu đã được tiến hành để hiểu sự cấu tạo và nguồn gốc của
+              nó, thông qua việc sử dụng các thiết bị quan sát như kính viễn vọng và vệ tinh.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row8 info initial-state" id="_8" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Vị trí và kích thước:</b></h5> Đám mây Magellan Lớn nằm trong chòm sao Hạc và cách chúng ta
+              khoảng 163.000 năm ánh sáng. Nó có kích thước lớn, với đường kính xấp xỉ 14.000 năm ánh sáng. Vì nằm gần
+              chúng ta, nó có thể quan sát rõ ràng và được xem là một trong những thiên hà gần nhất với Dải Ngân Hà.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Cloaked_in_red.jpg/330px-Cloaked_in_red.jpg"
+                  title="Một phần nhỏ của Đám mây Magellan Lớn.">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc và thành phần:</b></h5> Đám mây Magellan Lớn có cấu trúc mờ mịn và không quy tắc như Dải
+              Ngân Hà. Nó chứa hàng tỷ ngôi sao, bụi, khí và các cụm sao. Các khu vực tạo sao trong LMC rất phong phú
+              và đa dạng, với sự hiện diện của các sao trẻ, cụm sao, và các vùng hình thành sao đang diễn ra.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Đám mây Magellan Lớn là một đối tượng nghiên cứu quan trọng
+              trong thiên văn học. Nhờ vị trí gần và kích thước lớn, các nhà khoa học có thể nghiên cứu chi tiết cấu
+              trúc, hình thành và tiến hóa của nó. Nó đã cung cấp thông tin quan trọng về sự hình thành và phát triển
+              của thiên hà, cấu trúc sao, các quá trình tạo sao và tiến hóa sao, cũng như sự phân phối của nguyên tố
+              trong vũ trụ.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Vai trò lịch sử:</b></h5> Đám mây Magellan Lớn đã chơi một vai trò quan trọng trong lịch sử thiên
+              văn học. Nó đã được nhà thám hiểm người Bồ Đào Nha Ferdinand Magellan quan sát vào năm 1519, đánh dấu
+              viễn cảnh đầu tiên về thiên hà ngoài Dải Ngân Hà và khám phá thực sự rộng lớn của vũ trụ.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row9 info initial-state" id="_9" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Vị trí và kích thước:</b></h5> Đám mây Magellan Nhỏ nằm trong chòm sao Tái Định, cách chúng ta
+              khoảng 200.000 năm ánh sáng. Kích thước của nó lớn hơn so với Dải Ngân Hà, với đường kính khoảng 7.000
+              năm ánh sáng.
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc và thành phần:</b></h5> Đám mây Magellan Nhỏ có cấu trúc không đều và mờ mịn. Nó cũng
+              chứa hàng tỷ ngôi sao, bụi, khí và các cụm sao tương tự như Đám mây Magellan Lớn. Nó có nhiều vùng tạo
+              sao và cụm sao trẻ tuổi.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Đám mây Magellan Nhỏ là một đối tượng quan trọng trong nghiên
+              cứu thiên văn. Nhờ vị trí gần và kích thước lớn, các nhà khoa học có thể nghiên cứu chi tiết về cấu
+              trúc, hình thành và tiến hóa của nó. Nó đã cung cấp thông tin quan trọng về sự hình thành và phát triển
+              của thiên hà, quá trình tạo sao và tiến hóa sao, cũng như phân bố nguyên tố trong vũ trụ.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Liên kết với Đám mây Magellan Lớn:</b></h5> Đám mây Magellan Nhỏ và Đám mây Magellan Lớn có một
+              tương tác hấp dẫn và liên kết với nhau qua lực hấp dẫn. Sự tương tác này có thể đã ảnh hưởng đến cấu
+              trúc và tiến hóa của cả hai đám mây.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row10 info initial-state" id="_10" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Cấu trúc:</b></h5> Ngân Hà có hình dạng giống như một đĩa phẳng quay, với một cấu trúc xoắn ốc.
+              Nó bao gồm một đĩa mỏng chứa các vùng tạo sao, cụm sao và bụi, và một gói chất liệu tối gọi là "dải bụi"
+              hoặc "dải bụi Ngân Hà". Trung tâm của Ngân Hà chứa một vùng tương đối sáng gọi là "nhân Ngân Hà" hoặc
+              "lõi Ngân Hà".
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Milky_Way_Arch.jpg/1383px-Milky_Way_Arch.jpg"
+                  title="Vòm Ngân hà nổi lên từ Cerro Paranal, Chile, ở bên trái, và chìm trong ánh đèn đêm của Antofagasta. Vật thể sáng ở trung tâm, phía trên Dải Ngân hà là Sao Mộc, bằng cách nào đó bị kéo dài ra do hình chiếu toàn cảnh. Các đám mây Magellanic có thể nhìn thấy ở phía bên trái, và một máy bay đã để lại dấu vết có thể nhìn thấy ở bên phải, dọc theo bao vây Vista.">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Kích thước và khối lượng:</b></h5> Đường kính của Ngân Hà được ước tính khoảng 100.000 năm ánh
+              sáng và độ dày của nó khoảng 1.000 năm ánh sáng. Khối lượng của Ngân Hà được ước tính là hàng tỷ lần
+              khối lượng Mặt Trời.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/A_firestorm_of_star_birth_%28artist%E2%80%99s_illustration%29.jpg/330px-A_firestorm_of_star_birth_%28artist%E2%80%99s_illustration%29.jpg"
+                  title="Hình minh họa này mô tả quang cảnh bầu trời đêm từ một hành tinh giả định nằm trong dải Ngân hà trẻ trung cách đây 10 tỷ năm. Các tầng trời bùng cháy bởi một cơn bão lửa của sự ra đời của các vì sao; Những đám mây khí hydro màu hồng phát sáng chứa vô số ngôi sao mới sinh, và màu trắng xanh của các cụm sao trẻ rải rác khắp cảnh quan. Tỷ lệ sinh của các ngôi sao cao gấp 30 lần so với trong Dải Ngân hà ngày nay. Tuy nhiên, Mặt trời không nằm trong số những ngôi sao non trẻ này - nó sẽ không được sinh ra trong 5 tỷ năm nữa. Liên kết: Thông cáo báo chí của NASA Sự phát triển của các thiên hà giống Dải Ngân hà theo thời gian: Thiên hà Hubble ở dịch chuyển đỏ z = 0,26; Thiên hà Hubble ở dịch chuyển đỏ z = 0,65; Thiên hà Hubble ở dịch chuyển đỏ z = 1,3; Thiên hà Hubble ở dịch chuyển đỏ z = 2,0; Thiên hà Hubble ở dịch chuyển đỏ z = 2,4; Thiên hà Hubble ở dịch chuyển đỏ z = 2,8.">
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Các thành phần:</b></h5> Ngân Hà chứa hàng tỷ ngôi sao, cụm sao và hành tinh, được gọi là "dân số
+              Ngân Hà". Ngoài ra, nó còn chứa các cấu trúc khí và bụi, các vùng tạo sao, các thiên thể như sao chổi,
+              và các cấu trúc vũ trụ khác như đám mây khí và vụ nổ sao.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Milky_Way_Night_Sky_Black_Rock_Desert_Nevada.jpg/445px-Milky_Way_Night_Sky_Black_Rock_Desert_Nevada.jpg"
+                  title="Bức ảnh Dải Ngân hà trên bầu trời đêm trên sa mạc Black Rock, Nevada được chụp vào ngày 22/7/2007. Đó là độ phơi sáng 54 giây được chụp bằng máy ảnh kỹ thuật số Cannon EOS 5D gắn chân máy với ống kính 16mm, mở rộng ở f2.8 và ISO800, năm 2007">
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Cấu trúc vùng tạo sao:</b></h5> Trong Ngân Hà, có những vùng tạo sao sáng rực, gọi là các "cụm
+              sao" và "hố sao". Các cụm sao là nhóm các ngôi sao được hình thành cùng nhau trong các đám mây khí và
+              bụi, trong khi các hố sao là nhóm các ngôi sao tương đối trẻ tuổi.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row11 info initial-state" id="_11" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Vị trí và khoảng cách:</b></h5> Thiên hà Chong Chóng nằm cách chúng ta khoảng 28 triệu năm ánh
+              sáng, trong chòm sao Chong Chóng. Nó là một phần của Nhóm Thiên hà Chông Chóng, một nhóm thiên hà lớn
+              trong Vôi Ngọc (Virgo Supercluster).
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Anttlers101.jpg/450px-Anttlers101.jpg"
+                  title="Thiên hà Chong Chóng. Ảnh của: Scott Anttila.">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Hình dạng và cấu trúc:</b></h5> Thiên hà Chong Chóng có hình dạng giống như một chiếc nón, với
+              một đĩa mỏng quay xoay xung quanh một nhân tạo sao lớn. Đĩa của nó chứa hàng tỷ ngôi sao và bụi, trong
+              khi nhân tạo sao tập trung tại trung tâm. Thiên hà này có đường kính xấp xỉ 50.000 năm ánh sáng.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Supernova_in_M101_2011-08-25.jpg/330px-Supernova_in_M101_2011-08-25.jpg"
+                  title="Siêu tân tinh loại Ia SN 2011fe (mũi tên).">
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Đặc điểm quan trọng:</b></h5> Một đặc điểm nổi bật của thiên hà Chong Chóng là dải bụi và khí
+              quanh đĩa của nó, tạo ra hình dạng giống chiếc mũ nón. Đây là một trong số ít thiên hà ngoại vi có dải
+              bụi rõ ràng như vậy. Ngoài ra, nhân tạo sao tại trung tâm là một cụm sao cầu chứa hàng chục triệu ngôi
+              sao, tạo nên sự sáng rực đặc biệt.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nghiên cứu và quan sát:</b></h5> Thiên hà Chong Chóng là một trong những thiên hà nổi tiếng và
+              phổ biến được quan sát trong lĩnh vực thiên văn học. Nó đã được nghiên cứu rất kỹ và đóng góp vào việc
+              hiểu rõ hơn về cấu trúc thiên hà xoắn ốc, quá trình hình thành sao, và tiến hóa của vũ trụ.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row 12 info initial-state" id="_12" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Vị trí và khoảng cách:</b></h5> Thiên hà Mũ Vành Rộng nằm cách chúng ta khoảng 30 triệu năm ánh
+              sáng, trong chòm sao Triangulum. Nó là một thành viên của Nhóm Thiên hà Triangulum, gần với Nhóm Thiên
+              hà Đường Sáng của chúng ta.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sombrero_Galaxy_in_infrared_%28Ssc2005-11a3%29.jpg/330px-Sombrero_Galaxy_in_infrared_%28Ssc2005-11a3%29.jpg"
+                  title="M104 ở hồng ngoại">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Hình dạng và cấu trúc:</b></h5> Thiên hà Mũ Vành Rộng có hình dạng giống như một đĩa xoắn ốc rất
+              sáng, với một đĩa mỏng và cấu trúc vòng rộng nổi bật. Đường kính của nó được ước tính là khoảng 100.000
+              năm ánh sáng.
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Cụm sao trung tâm:</b></h5> Trung tâm của thiên hà Mũ Vành Rộng chứa một cụm sao sáng, tương tự
+              như các cụm sao tương tự như chúng ta thấy trong thiên hà Chong Chóng (Sombrero Galaxy). Cụm sao này là
+              nơi tập trung hàng triệu ngôi sao.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nghiên cứu và quan sát:</b></h5> Thiên hà Mũ Vành Rộng là một đối tượng quan trọng trong nghiên
+              cứu thiên văn. Nó đã được quan sát kỹ lưỡng để hiểu rõ hơn về cấu trúc thiên hà xoắn ốc, quá trình hình
+              thành sao, và cơ chế hình thành các vòng rộng. Các nghiên cứu chi tiết về thiên hà Mũ Vành Rộng cung cấp
+              thông tin quan trọng về tiến hóa của vũ trụ và cấu trúc của thiên hà xoắn ốc.
+
+          </div>
+      </div>
+
+
+
+
+
+      <div class="row row13 info initial-state" id="_13" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Vị trí và khoảng cách:</b></h5> Thiên hà Hoa Hướng Dương nằm cách chúng ta khoảng 37 triệu năm
+              ánh sáng, trong chòm sao Mánh Mung. Nó là một thành viên của Nhóm Thiên hà Mánh Mung.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Messier_63.jpg/240px-Messier_63.jpg"
+                  title="Messier 63 chụp qua bước sóng hồng ngoại từ kính viễn vọng không gian Spitzer.">
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Hình dạng và cấu trúc:</b></h5> Thiên hà Hoa Hướng Dương có hình dạng giống một đĩa xoắn ốc, với
+              cấu trúc cánh quạt rộng rãi. Nó có một đĩa mỏng chứa hàng tỷ ngôi sao và cấu trúc xoắn xoắn quanh trung
+              tâm. Đường kính của nó được ước tính là khoảng 100.000 năm ánh sáng.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/M63_3.6_8.0_24_microns_spitzer.png/330px-M63_3.6_8.0_24_microns_spitzer.png"
+                  title="Messier 63, chụp từ kính 24 inch trên núi Lemmon, Arizona. Ảnh của Joseph D. Schulman">
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Đặc điểm quan trọng:</b></h5> Thiên hà Hoa Hướng Dương có một dải bụi và khí quanh đĩa của nó,
+              tạo nên vẻ đẹp và sự tương tác giữa vật chất. Nó có một số vùng tạo sao sáng rực và các vệt chìm, nơi
+              hình thành các ngôi sao mới.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Quan sát và nghiên cứu:</b></h5> Thiên hà Hoa Hướng Dương là một đối tượng quan trọng trong
+              nghiên cứu thiên văn. Nó đã được quan sát kỹ lưỡng để tìm hiểu về cấu trúc thiên hà xoắn ốc, quá trình
+              hình thành sao và tiến hóa của vũ trụ. Nghiên cứu thiên hà Hoa Hướng Dương cung cấp thông tin quý giá về
+              sự hình thành và phát triển của thiên hà trong vũ trụ.
+
+          </div>
+      </div>
+
+
+
+
+
+
+      <div class="row row14 info initial-state" id="_14" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Tên gọi và vị trí:</b></h5> Thiên hà Nòng Nọc được biết đến với tên gọi Thiên hà Ngôi sao Nòng
+              Nọc hoặc Thiên hà Ngôi sao Hoàng gia. Nó nằm trong chòm sao Thiên Long (Serpens) và cách Trái Đất khoảng
+              420 triệu năm ánh sáng.
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Hình dạng và cấu trúc:</b></h5> Thiên hà Nòng Nọc là một thiên hà xoắn ốc, với một thanh ngang bị
+              đứt đoạn. Điều đặc biệt là nó có một vệt dài màu xanh dương chạy qua thiên hà, được cho là tạo ra bởi
+              một chuỗi các cụm sao lớn và dài. Vệt này có chiều dài khoảng 280.000 năm ánh sáng.
+
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Khoảng cách:</b></h5> Thiên hà Nòng Nọc cách Trái Đất khoảng 420 triệu năm ánh sáng, điều này có
+              nghĩa là ánh sáng mất 420 triệu năm để đi từ thiên hà này đến Trái Đất.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nghiên cứu:</b></h5> Thiên hà Nòng Nọc là một trong những thiên hà nổi tiếng và quan trọng trong
+              lĩnh vực nghiên cứu thiên văn. Đặc điểm đặc biệt của vệt màu xanh dương đã thu hút sự quan tâm của các
+              nhà khoa học và nghiên cứu viên, và nó đang được nghiên cứu để hiểu rõ hơn về cấu trúc và tiến hóa của
+              thiên hà.
+
+          </div>
+      </div>
+
+
+
+
+
+
+      <div class="row row15 info initial-state" id="_15" style="color: white; position: relative;  ">
+          <div class="col-lg-3 ">
+              <h5><b>Vị trí và khoảng cách:</b></h5> Thiên hà Xoáy Nước nằm cách chúng ta khoảng 75 triệu năm ánh
+              sáng, trong chòm sao Bọ Cạp. Nó thuộc về Nhóm Thiên hà Bọ Cạp.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/M51_whirlpool_galaxy_black_hole.jpg/300px-M51_whirlpool_galaxy_black_hole.jpg"
+                  title="Chữ thập bên trong nhân của M51 có khả năng là hai vành bụi xung quanh một lỗ đen tại trung tâm thiên hà">
+
+          </div>
+          <div class="col-lg-3 ">
+              <h5><b>Hình dạng và cấu trúc:</b></h5> Thiên hà Xoáy Nước có hình dạng giống một đĩa xoắn ốc với cấu
+              trúc
+              rõ ràng của các cánh xoắn. Nó có một đĩa mỏng chứa hàng tỷ ngôi sao và các cụm sao tập trung trong vòng
+              xoắn. Đường kính của nó ước tính khoảng 75.000 năm ánh sáng.
+              <br><br>
+              <img style="width: 100%;height: 250px;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/M51Sketch.jpg/225px-M51Sketch.jpg"
+                  title="Hình vẽ M51 của Lord Rosse (William Parsons) năm 1845">
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Đặc điểm đáng chú ý:</b></h5> Thiên hà Xoáy Nước có một vết nước dài xuống từ trung tâm thiên hà,
+              giống như một thác nước. Vết nước này được hình thành bởi bụi và khí trong thiên hà, và tạo nên một hình
+              ảnh ấn tượng.
+
+          </div>
+          <div class="col-lg-3">
+              <h5><b>Nghiên cứu và quan sát:</b></h5> Thiên hà Xoáy Nước đã được quan sát kỹ lưỡng bằng các thiết bị
+              quan sát thiên văn khác nhau để tìm hiểu về cấu trúc và tiến hóa của nó. Nghiên cứu về thiên hà Xoáy
+              Nước đóng góp vào việc hiểu về sự hình thành và phát triển của các thiên hà xoắn ốc trong vũ trụ.
+
+          </div>
+      </div>
       <script>
         var moreDetail = document.getElementsByClassName("moreDetail");
         var expandBtn = document.getElementsByClassName("expand-btn");
@@ -168,7 +745,61 @@
             }
           }
         }
-    
+        
+        var rows = document.querySelectorAll('.info');
+
+
+var swiper = document.querySelector('.swiper');
+swiper.addEventListener('transitionend', function () {
+    var activeIndex = swiper.swiper.realIndex;
+    showInfo(activeIndex);
+});
+
+
+function showInfo(index) {
+    for (var i = 0; i < rows.length; i++) {
+        if (i === index) {
+            rows[i].style.display = 'flex';
+        } else {
+            rows[i].style.display = 'none';
+        }
+    }
+}
+
+window.addEventListener('load', function () {
+            var rows = document.querySelectorAll('.initial-state');
+            for (var i = 0; i < rows.length; i++) {
+                rows[i].style.display = 'none';
+            }
+        });
+
+        var header = document.getElementById('header');
+        var nav = document.getElementById('nav');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        // đóng/ mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight == headerHeight;
+            if (nav.style.display === "none"){
+                nav.style.display = 'block';
+            }else {
+                nav.style.display = 'none';
+            }
+        }
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav ul a[href*="#"]');
+        for(var i=0;i< menuItems.length; i++){
+            var menuItem = menuItems[i];
+           
+            menuItem.onclick = function (event){
+            var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(isParentMenu){
+                    event.preventDefault();
+                }else {
+                    nav.style.display = 'none';
+                }
+            }
+        }
       </script>
 </body>
 </html>
